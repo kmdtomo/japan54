@@ -353,6 +353,27 @@ export const Top: React.FC = () => {
 
               <div className="flex flex-row items-center justify-between border-b border-[#033859] px-5 py-4">
                 <div className="w-[300px]">
+                  <h3 className="text-lg font-bold text-gray-700">営業所</h3>
+                </div>
+                <div className="w-[600px]">
+                  <p className="text-base text-gray-600 space-y-2">
+                    <span className="block mb-2">
+                      ・〒187-0022 東京都小平市上水本町１丁目２６−１１
+                      <span className="ml-2 text-red-700 font-semibold">（担当：国分寺）</span>
+                    </span>
+                    <span className="block mb-2">
+                      ・〒176-0022 東京都練馬区向山１丁目２−１
+                      <span className="ml-2 text-red-700 font-semibold">（担当：中村）</span>
+                    </span>
+                    <span className="block">
+                      ・〒135-0061 東京都江東区豊洲２丁目４−９
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-row items-center justify-between border-b border-[#033859] px-5 py-4">
+                <div className="w-[300px]">
                   <h3 className="text-lg font-bold text-gray-700">所在地</h3>
                 </div>
                 <div className="w-[600px]">
@@ -397,6 +418,27 @@ export const Top: React.FC = () => {
                 </div>
                 <div className="w-full">
                   <p className="text-sm text-gray-600">株式会社ジャパン54</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col border-b border-[#033859] px-3 py-4">
+                <div className="w-full mb-2">
+                  <h3 className="text-base font-bold text-gray-700">営業所</h3>
+                </div>
+                <div className="w-full">
+                  <p className="text-sm text-gray-600 space-y-3">
+                    <span className="block">
+                      ・〒187-0022 東京都小平市上水本町１丁目２６−１１
+                      <span className="block ml-2 text-red-700 font-semibold">（担当：国分寺）</span>
+                    </span>
+                    <span className="block">
+                      ・〒176-0022 東京都練馬区向山１丁目２−１
+                      <span className="block ml-2 text-red-700 font-semibold">（担当：中村）</span>
+                    </span>
+                    <span className="block">
+                      ・〒135-0061 東京都江東区豊洲２丁目４−９
+                    </span>
+                  </p>
                 </div>
               </div>
 
