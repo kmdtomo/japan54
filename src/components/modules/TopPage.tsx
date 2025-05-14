@@ -139,19 +139,34 @@ export const Top: React.FC = () => {
       {/* about usセクション */}
       <section className="relative z-30 md:px-[150px] px-4 md:py-24 py-8 md:mt-0 -mt-20 w-full max-w-full overflow-x-hidden" ref={aboutRef}>
         <div className="container mx-auto max-w-6xl relative">
-          {/* 背景画像として絶対配置 */}
+          {/* 背景画像として絶対配置 - PC用 */}
           <div 
-            className={`absolute top-0 right-0 md:w-[750px] w-full md:h-[450px] h-[300px] -z-10 md:mt-16 mt-20 ${
+            className={`absolute top-0 right-0 md:w-[750px] w-full md:h-[450px] h-[300px] -z-10 md:mt-16 mt-20 md:block hidden ${
               isAboutVisible ? 'animate-fade-in-right' : 'opacity-0'
             }`}
             style={{ animationDelay: '0.5s' }}
           >
             <img
-              src="/japan54(4).png"
+              src="/fix_1.png"
+              alt="代表写真"
+              className="object-cover w-full h-full"
+            />
+          </div>
+          
+          {/* 背景画像として絶対配置 - モバイル用 */}
+          <div 
+            className={`absolute top-0 right-0 md:w-[750px] w-full md:h-[450px] h-[300px] -z-10 md:mt-16 mt-20 md:hidden block ${
+              isAboutVisible ? 'animate-fade-in-right' : 'opacity-0'
+            }`}
+            style={{ animationDelay: '0.5s' }}
+          >
+            <img
+              src="/FD847F9F-7C0A-4DCF-8DD2-A5FE4D0E4352.jpg"
               alt="代表写真"
               className="object-cover w-full h-full md:mt-0 mt-4"
             />
           </div>
+          
           <div className="flex flex-col space-y-6">
             {/* About Us */}
             <div 

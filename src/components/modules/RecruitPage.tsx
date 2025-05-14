@@ -77,18 +77,20 @@ export default function RecruitPage() {
       {/* 採用メッセージセクション */}
       <section className="relative z-30 md:px-[150px] px-4 md:py-20 py-16 mb-8 bg-white" ref={recruitMessageRef}>
         <div className="container mx-auto max-w-6xl relative">
-          {/* 背景画像として絶対配置 */}
-          <div 
-            className={`absolute top-0 right-0 md:w-[750px] w-full md:h-[450px] h-[300px] -z-10 md:mt-8 mt-20 ${
-              isRecruitMessageVisible ? 'animate-fade-in-right' : 'opacity-0'
-            }`}
-            style={{ animationDelay: '0.5s' }}
-          >
-            <img
-              src="/j_8.png"
-              alt="代表写真"
-              className="object-cover w-full h-full md:mt-0 mt-4"
-            />
+          {/* PCでは背景画像として絶対配置、スマホでは通常フロー内で表示 */}
+          <div className="md:block hidden">
+            <div 
+              className={`absolute top-0 md:right-[-250px] md:w-[750px] md:h-[450px] -z-10 md:mt-8 ${
+                isRecruitMessageVisible ? 'animate-fade-in-right' : 'opacity-0'
+              }`}
+              style={{ animationDelay: '0.5s' }}
+            >
+              <img
+                src="/S__4177977.jpg"
+                alt="採用メッセージ画像"
+                className="object-cover w-[500px] h-[450px]"
+              />
+            </div>
           </div>
 
           {/* タイトル */}
@@ -103,11 +105,27 @@ export default function RecruitPage() {
           </h2>
           <div 
             className={`
-              w-20 h-1 bg-red-700 md:mb-12 mb-[200px]
+              w-20 h-1 bg-red-700 md:mb-12 mb-8
               ${isRecruitMessageVisible ? 'animate-fade-in-up' : 'opacity-0'}
             `}
             style={{ animationDelay: '0.5s' }}
           ></div>
+
+          {/* スマホ版の画像（通常フロー内） */}
+          <div className="md:hidden flex justify-center mb-[-50px]">
+            <div 
+              className={`w-[300px] h-[300px] ${
+                isRecruitMessageVisible ? 'animate-fade-in-up' : 'opacity-0'
+              }`}
+              style={{ animationDelay: '0.5s' }}
+            >
+              <img
+                src="/S__4177977.jpg"
+                alt="採用メッセージ画像"
+                className="object-cover w-[300px] h-[300px]"
+              />
+            </div>
+          </div>
 
           {/* 採用メッセージ本文 */}
           <div

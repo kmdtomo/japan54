@@ -193,7 +193,7 @@ export default function CompanyPage() {
                   <h3 className="text-lg font-bold text-gray-700">メールアドレス</h3>
                 </div>
                 <div className="w-[600px]">
-                  <p className="text-gray-600">loginexus.0727@gmail.com</p>
+                  <p className="text-gray-600">Logistics@japan54.com</p>
                 </div>
               </div>
 
@@ -316,7 +316,7 @@ export default function CompanyPage() {
                   <h3 className="text-base font-bold text-gray-700">メールアドレス</h3>
                 </div>
                 <div className="w-full">
-                  <p className="text-sm text-gray-600">loginexus.0727@gmail.com</p>
+                  <p className="text-sm text-gray-600">Logistics@japan54.com</p>
                 </div>
               </div>
 
